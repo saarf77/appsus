@@ -1,0 +1,104 @@
+.table-container .mail-nav{
+    height: 100%;
+    width: 260px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    background-color: var(--mail-cls12);
+    transition: width 0.25s;
+}
+
+.table-container .mail-nav.obfuscate span{
+    display: none;
+}
+
+.mail-nav .compose-new-mail{
+    height: 50px;
+    width: 140px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+
+    background-color: var(--mail-clr1);
+    border-radius: 17px;
+    margin: 4px;
+    box-shadow: 2px 5px 10px -2px var(--mail-clr6);
+
+    transition: width 0.15s;
+    cursor: pointer;
+}
+
+.mail-nav .compose-new-mail button{
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.mail-nav .compose-new-mail img{
+    height: 32px;
+    width: 32px;
+
+}
+
+.mail-nav .compose-new-mail span{
+    font-size: 1.1rem;
+    background-color: transparent;
+    border: none;
+}
+
+.table-container .mail-nav[class*="widthslash"]{
+    width: 64px;
+}
+.table-container .mail-nav:not([class*="widthslash"]){
+    box-shadow: 3px 5px 7px -1px rgba(0,0,0,0.35);
+}
+
+.mail-nav .compose-new-mail[class*="widthslash"]{
+    width: 56px;
+    box-shadow: none;
+}
+
+
+/* --------------------- --------------------- filters --------------------- ---------------------*/
+
+.mail-nav .filters a{
+    display: flex;
+    flex-direction: row;
+}
+
+.mail-nav .filters .nav-btn{
+    background-color: transparent;
+    border: none;
+}
+
+.mail-nav .filters .nav-btn:hover{
+    background-color: var(--mail-clr4b);
+    animation-name: onHoverAnimation;
+    border-radius: 50%;
+    opacity: 0.7;
+}
+
+section:not(.widthslash) > .filters a:hover{
+    background-color: var(--mail-clr4b);
+    animation-name: onHoverAnimation;
+}
+
+
+
+section:not(.widthslash) > .filters .nav-btn:hover{
+    border-radius: none;
+    background-color: transparent;
+}
+
+.mail-nav .filters .link-txt{
+    align-self: center;
+
+    font-size: 1.3rem;
+
+}

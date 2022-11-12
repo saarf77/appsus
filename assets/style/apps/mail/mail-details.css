@@ -1,0 +1,82 @@
+.mail-table .mail-details{
+    height: 100%;
+    width: 100%;
+
+    margin-inline-start: 50px;
+
+}
+
+.mail-details .details-title{
+    height: 4rem;
+    position: relative;
+    font-size: 2.5rem;
+}
+
+.mail-details .details-title .back-btn{
+    width: 45px;
+    height: 45px;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-45px);
+
+    margin-block-start: 4px;
+
+    background-color: transparent;
+    border: none;
+}
+
+.mail-details .details-title .back-btn:hover{
+    background-color: var(--mail-clr4);
+    border-radius: 50%;
+    animation-name: onHoverAnimation;
+}
+
+.mail-details .details-title span{
+    font-size: 2.2rem;
+}
+
+.mail-details .details-sender{
+    height: 3rem;
+    width: calc(100% - 50px);
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    font-size: 1.5rem;
+    border-top: 1px solid var(--mail-clr3) ;
+}
+
+.mail-details .details-sender .sender-icon{
+    height: 40px;
+    width: 40px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-45px);
+
+    padding: 3px;
+    text-align: center;
+    background-color: var(--mail-cls4);
+    color: var(--mail-clr1);
+    font-size: 1.8rem;
+    border-radius: 50%;
+}
+
+.mail-details .details-more-options{
+    height: 3rem;
+    width: calc(100% - 50px);
+    border-top: 1px solid var(--mail-clr3) ;
+}
+
+.mail-details .mail-body{
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+
+    width: 90%;
+}

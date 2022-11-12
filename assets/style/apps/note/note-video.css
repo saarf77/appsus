@@ -1,0 +1,10 @@
+.note-video{
+    text-align: center ;
+    font-size: 1.3em;
+    height: 100%;
+    width: 100%;
+}
+
+.note-video-title{
+    padding: .2em;
+}

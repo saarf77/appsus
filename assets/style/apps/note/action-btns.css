@@ -1,0 +1,99 @@
+.action-btns{
+    opacity: 0;
+    transition: .3s;
+}
+
+.note-container:hover .action-btns{
+    opacity: 1;
+}
+
+.action-btns li:hover{
+    color: grey;
+}
+
+
+.action-btns .fa-palette{
+    position: relative;
+}
+
+.color-choose-modal {
+    transform: translate(-36%, 49%);
+    z-index: 100;
+    position:fixed;
+    padding: 0.4em;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+}
+
+.color-choose-modal >* {
+    margin-inline-end: 0.1em;
+    width: 30px;
+    height: 30px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+
+.default{
+    border: 1px solid purple;
+}
+
+.over:hover{
+    border: 1px solid black; 
+}
+
+.color-choose-modal .default {
+    background-color: white;
+
+}
+
+.color-choose-modal .red {
+    background-color: #f28b82;
+
+}
+
+.color-choose-modal .orange {
+    background-color: #fbbc04;
+
+}
+
+.color-choose-modal .yellow{
+    background-color: #fff475;
+
+}
+
+.color-choose-modal .green{
+    background-color: #ccff90;
+
+}
+
+.color-choose-modal .teal{
+    background-color: #a7ffeb;
+
+}
+.color-choose-modal .blue{
+    background-color: #cbf0f8;
+
+}
+
+.color-choose-modal .dark-blue{
+    background-color: #aecbfa;
+
+}
+
+.color-choose-modal .purple{
+    background-color: #d7aefb;
+
+}
+
+.color-choose-modal .pink{
+    background-color: #fdcfe8;
+}
+
+.color-choose-modal .brown{
+    background-color: #e6c9a8;
+}
+.color-choose-modal .grey{
+    background-color: #e8eaed;
+}
+

@@ -1,0 +1,182 @@
+@import url(./mail-list.css);
+@import url(./mail-filter.css);
+@import url(./search-form.css);
+@import url(./mail-nav.css);
+@import url(./mail-details.css);
+@import url(./mail-compose.css);
+
+main.mail-layout{
+    height: 100vh;
+    width: calc(100vw -80px);
+    overflow-x: hidden;
+    background-color: var(--mail-cls12);
+    margin-block-start: 0;
+}
+
+.mail-layout .table-container{
+    height: 94vh;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+.table-container{
+    overflow-y: clip;
+    position: relative;
+}
+
+
+.table-container .mail-table{
+    height: 100%;
+    width: 100%;
+
+    margin-inline: 65px 15px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+
+    background-color: var(--clr1);
+}
+
+.table-container .mail-table header{
+    height: 6vh;
+    width: 100%;
+    
+    padding-block: 25px 0px;
+    padding-inline: 15px 15px;
+}
+
+/* --------------------- --------------------- composer msg --------------------- ---------------------*/
+
+.quit-msg{
+    background-color: var(--mail-send-cls1);
+    border-radius: 12px;
+    border: none;
+
+    color: var(--clr2);
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.quit-msg:hover{
+    box-shadow: 0px 2px 5px 0px var(--mail-send-cls3);
+}
+
+.quit-msg:active{
+    background-color: var(--mail-send-cls2);
+}
+
+.mail-layout > * > .close-x-btn{
+    background-color: transparent;
+    border: none;
+    position: absolute;
+}
+
+.mail-layout > * >.close-x-btn:hover{
+    background-color: var(--mail-clr4);
+    border-radius: 50%;
+    animation-name: onHoverAnimation;
+}
+
+.mail-layout .invalid-recipient{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    width: 40%;
+    height: 17%;
+
+    background-color: var(--clr1);
+    box-shadow: -1px -1px 7px 1px var(--mail-clr6);
+    border-radius: 5px;
+    padding: 15px;
+    z-index: 60;
+}
+
+.mail-layout > * > .error-msg-title{
+    height: 25%;
+    width: 100%;
+
+    font-size: 2rem;
+}
+
+.mail-layout .invalid-recipient .error-msg{
+    height: 75%;
+    width: 100%;
+
+    font-size: 1.3rem;
+}
+
+.mail-layout .invalid-recipient .quit-msg{
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+
+    width: 20%;
+}
+
+.mail-layout .invalid-recipient .close-x-btn{
+    top: 15px;
+    right: 15px;
+}
+
+.mail-layout .no-subject-msg{
+    position: absolute;
+    top: 5%;
+    left: 60%;
+
+    width: 30%;
+    height: 15%;
+
+    background-color: var(--clr1);
+    box-shadow: -1px -1px 7px 1px var(--mail-clr6);
+    border-radius: 5px;
+    padding: 15px;
+    z-index: 60;
+}
+
+.mail-layout .no-subject-msg .error-msg-title{
+    font-size: 1.3rem;
+}
+
+.mail-layout .no-subject-msg .error-msg{
+    display: flex;
+    font-size: 1rem;
+    padding-block-start: 10px;
+}
+
+.mail-layout .no-subject-msg .ignore-msg{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    
+    min-height: 36px;
+    width: 70px;
+
+    border-radius: 6px;
+    background-color: var(--mail-more-gray1);
+    border: 0.5px solid var(--mail-clr3);
+    transition: 0.5s;
+}
+
+.mail-layout .no-subject-msg .ignore-msg:hover{
+    background-color: var(--mail-cls10);
+}
+
+.mail-layout .no-subject-msg .quit-msg{
+    position: absolute;
+
+    right: 84px;
+    bottom: 10px;
+    
+    min-height: 35px;
+    width: 70px;
+
+    border-radius: 6px;
+
+    border: 1px solid var(--clr1);
+    outline: 2px solid var(--mail-send-cls1);
+}

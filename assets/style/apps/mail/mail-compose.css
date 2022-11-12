@@ -1,0 +1,306 @@
+*[class*="conceal"]{
+    display: none;
+}
+
+.mail-layout .mail-composer{
+    position: fixed;
+    bottom: 7.5px;
+    right: 7.5px;
+    height: 36%;
+    width: 27%;
+
+    background-color: var(--mail-clr1);
+    box-shadow: -1px -1px 7px 1px var(--mail-clr6);
+    z-index: 50;
+}
+
+.mail-layout .mail-composer[class*="minimum"]{
+    height: 2.4rem;
+}
+
+.mail-layout .mail-composer[class*="large"]{
+    bottom: 50%;
+    right: 50%; 
+
+    height: 72%;
+    width: 54%;
+
+    transform: translate(50%, 50%);
+}
+
+
+.mail-layout .mail-composer[class*="minimum"] .new-mail-body{
+    display: none;
+}
+
+.mail-composer .new-mail-header{
+    height: 2.4rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    font-size: 1.2rem;
+
+    background-color: var(--mail-cls12);
+}
+
+.mail-composer .new-mail-header label{
+    justify-self:flex-start;
+    align-self: center;
+    flex: 1;
+    padding: 0.6rem;
+}
+
+.mail-composer .new-mail-handler{
+    height: 2.4rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-self:flex-end;
+    align-self: center;
+    align-items: center;
+
+    padding-inline-end: 0.6rem;
+}
+
+.mail-composer .new-mail-handler button{
+    height: 24px;
+    width: 24px;
+    min-width: 24px;
+    min-height: 24px;
+
+    margin: 2px;
+    background-color: transparent;
+    border: none;
+
+}
+
+.mail-composer .new-mail-handler button:hover{
+    background-color: var(--mail-clr4);
+}
+
+.mail-composer .new-mail-handler img{
+    width: 12px;
+    height: 12px;
+}
+
+
+/* --------------------- --------------------- sent-to recipients area--------------------- ---------------------*/
+
+
+.mail-composer .send-to{
+    height: 2.4rem;
+    margin-inline: 15px 15px;
+    border-bottom: 1px solid var(--mail-clr3);
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(14, minmax(15px, 1fr));
+    grid-template-rows: minmax(15px, 1fr);
+}
+
+.mail-composer .send-to[class*="twocells"]{
+    height: 4.8rem; /* 2.4rem*2*/
+    grid-template-rows: repeat(2,minmax(15px, 1fr));
+}
+
+.mail-composer .send-to[class*="threecells"]{
+    height: 4.8rem; /* 7.2rem*3*/
+    grid-template-rows: repeat(3,minmax(15px, 1fr));
+}
+
+.mail-composer .send-to >*{
+    align-self: center;
+}
+
+.mail-composer .send-to .recipient-placeholder{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.mail-composer .send-to .recipient{
+    
+    background-color: transparent;
+    border: none;
+    padding-block:0 0;
+}
+.mail-composer .send-to .recipient:focus{
+    outline: none;
+}
+
+.mail-composer .send-to .target-input{
+    grid-column: 2/12;
+    grid-row: 1/1;
+
+    padding-inline-start: 0;
+}
+
+.mail-composer .send-to:has(> .to-txt.conceal) .target-input{
+    grid-column: 1/14;
+}
+
+.mail-composer .send-to[class*="twocells"] .copy-input{
+    grid-column: 2/14;
+    grid-row: 2/2;
+}
+
+.mail-composer .send-to[class*="threecells"] .copy-input{
+    grid-column: 2/14;
+    grid-row: 2/2;
+}
+
+.mail-composer .send-to[class*="twocells"] .blind-input{
+    grid-column: 2/14;
+    grid-row: 2/2;
+}
+
+.mail-composer .send-to[class*="threecells"] .blind-input{
+    grid-column: 2/14;
+    grid-row: 3/3;
+}
+
+
+.mail-composer .send-to .to-txt{
+    grid-column: 1/1;
+    grid-row: 1/1;
+
+    font-size: 1rem;
+    align-items: center;
+}
+
+.mail-composer .send-to .cc-txt{
+    grid-column: 1/1;
+    grid-row: 2/2;
+
+    font-size: 1rem;
+    align-items: center;
+}
+
+.mail-composer .send-to .bcc-txt{
+    grid-column: 1/1;
+    grid-row: 2/2;
+
+    font-size: 1rem;
+    align-items: center;
+}
+
+.mail-composer .send-to[class*="threecells"] .bcc-txt{
+    grid-row: 3/3;
+}
+
+.mail-composer .send-to .btn {
+    font-size: 1rem;
+    align-self: center;
+
+    background-color: transparent;
+    border: none;
+}
+
+.mail-composer .send-to .btn:hover{
+    text-decoration-line: underline;
+}
+
+.mail-composer .send-to .add-copy{
+    grid-column: 12/12;
+    grid-row: 1/1;
+}
+
+.mail-composer .send-to .add-blind-copy{
+    grid-column: 13/13;
+    grid-row: 1/1;
+}
+
+
+/* --------------------- --------------------- --------------------- ---------------------*/
+
+
+.mail-composer .mail-subject{
+    height: 2.4rem;
+    margin-inline: 15px 15px;
+    margin-block-end: 15px;
+    border-bottom: 1px solid var(--mail-clr3);
+}
+.mail-composer .mail-subject .subject-txt{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    padding-inline: 0 15px;
+}
+
+.mail-composer .mail-subject .subject-txt:hover,:focus{
+    outline: none;
+}
+
+.mail-composer .txt-block{
+    width: 100%;
+    padding-inline: 15px 15px;
+    height: 285px;
+    border: none;
+    resize: none;
+}
+
+.mail-layout .mail-composer[class*="large"] .txt-block{
+    height: 735px;
+}
+
+
+/* --------------------- --------------------- edit actions--------------------- ---------------------*/
+
+.mail-composer .composer-actions{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(25px, 1fr));
+    grid-template-rows: minmax(25px, 1fr);
+}
+
+
+.mail-composer .composer-actions .send-container{
+    grid-column: 1/1;
+    grid-row: 1/1;
+
+    display: flex;
+    flex-direction: row;
+    
+    margin-inline: 15px 5px ;
+    margin-block-end: 5px ;
+    
+}
+
+.composer-actions .send-container:hover > button{
+    box-shadow: 0px 2px 5px 0px var(--mail-send-cls3);
+}
+
+.composer-actions .send-container > button{
+    background-color: var(--mail-send-cls1);
+    border: none;
+    min-height: 20px;
+    min-width: 20px;
+    height: 32px;
+}
+
+.composer-actions .send-container .send-btn{
+    width: 70%;
+    color: var(--clr2);
+    font-size: 1rem;
+    font-weight: 700;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.composer-actions .send-container .send-btn:focus{
+    background-color: var(--mail-send-cls2);
+}
+
+.composer-actions .send-container .schedule-btn{
+    width: 30%;
+    border-left: 1px solid var(--clr5);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.mail-composer .composer-actions .composer-toolbar{
+    grid-column: 2/4;
+    grid-row: 1/1;
+}

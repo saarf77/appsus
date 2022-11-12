@@ -1,0 +1,70 @@
+/* HEADER */
+
+.app-header {
+  color: #ffffff;
+  font-size: 1.3rem;
+  height: 9vh;
+  border-radius: 1.5rem;
+  padding: 0 2em;
+  margin-bottom: 1em;
+  background-color: #e0e0e0;
+}
+
+/* .logo {
+  margin-block-start: 0;
+  align-self: flex-start;
+  margin-top: 1rem;
+  border-radius: 6px;
+  font-family: Lato, sans-serif;
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-style: normal;
+  text-align: left;
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: start;
+} */
+
+/* .app-header .main-nav a:hover {
+  color: red;
+  border-radius: 1.25rem;
+  transition: .4s;
+} */
+
+.sprite {
+  background-image: url(../../img/logos.png);
+  height: 64px;
+  width: 64px;
+}
+
+.title {
+  background-position-y: 963px;
+}
+
+.keep {
+  background-position-y: 1719px;
+}
+
+.books {
+  background-position-y: 754px;
+}
+
+.mail {
+  background-position-y: 134px;
+}
+
+.about {
+  background-position-y: 547px;
+}
+
+/* mq */
+
+@media(max-width: 720px) {
+  .app-header {
+    background-color: var(--clr3);
+    color: var(--secondary-clr2);
+  }
+}

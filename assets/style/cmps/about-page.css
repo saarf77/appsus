@@ -1,0 +1,80 @@
+/* body */
+
+* {
+    box-sizing: border-box;
+}
+
+.about-page {
+    min-height: 90vh;
+    text-align: center;
+    background-image: url(../../img/about.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 10px;
+    color: #14213dff;
+    font-size: 1.5em;
+}
+
+/* .about-title {
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    font-family: Lato, sans-serif;
+    color: #14213dff;
+    font-size: 4.5rem;
+    line-height: 5rem;
+    font-style: normal;
+    text-align: center;
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    opacity: .8;
+} */
+
+
+.about-page p {
+    background-color: aliceblue;
+    text-align: center;
+    color: #14213dff;
+    font-weight: 500;
+    margin-inline-start: 15%;
+    margin-inline-end: 15%;
+    font-size: .9em;
+    padding: 8px;
+    border: 1px solid #14213dff;
+}
+
+.about-page h2 {
+    margin-top: .2em;
+    margin-bottom: .2em;
+}
+
+.team-img {
+    margin-top: 0;
+    width: 250px;
+    border-radius: 50%;
+    margin: 30px;
+    height: 250px;
+    margin-bottom: 3em;
+    margin-top: 0;
+}
+
+.about-team {
+    font-size: 1.5em;
+}
+
+.about-goals {
+    font-size: 1.5em;
+}
+
+.about-goals p {
+    font-size: .9em;
+}
+
+.success {
+    background-color: rgb(88, 130, 88);
+}
+
+.error {
+    background-color: rgb(187, 104, 104);
+}

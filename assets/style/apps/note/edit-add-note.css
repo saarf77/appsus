@@ -1,0 +1,123 @@
+
+.edit-note-box{
+    padding: 1em;
+    max-height: fit-content;
+    margin: 1em;
+    border-radius: 10px;
+    box-shadow: 0 1px 1px 0 rgb(65 69 73 / 30%), 0 1px 3px 1px rgb(65 69 73 / 15%);
+    }
+
+.note-edit-btns {
+    font-size: 1em;
+    padding: .2em;
+    background-color: transparent;
+    border: none;
+    color: black;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.note-edit-btns:hover  {
+    font-size: 1em;
+    padding: .2em;
+    background-color: #f0f2f3;
+}
+
+.edit-note-box input.title-input {
+    border:none;
+    border-bottom: 2px black solid;
+    outline: none;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.edit-note-box textarea.note-input {
+    font-family: open-sans;
+    border: none;
+    outline: none;
+    resize: none;
+    width: 100%;
+    background-color: #f0f2f3;
+    max-height: 80px;
+    font-size: 1.1rem;
+}
+
+.edit-note-box textarea.note-input:focus-within {
+    background-color:  rgba(255, 255, 255, 1);
+}
+
+
+/* .edit-note-box {
+    width: 315px;
+    z-index: 10;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    line-height: 50px;
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+    margin: 32px auto 32px auto;
+    background-color: #fff;
+    position: relative;
+  } */
+  
+  /* .edit-note-box.hide {
+    display: block;
+  }
+  
+  .edit-note-box form {
+    border-radius: 8px;
+    border: none;
+  
+    outline: none;
+    position: relative;
+  }
+  
+  .edit-note-box form input {
+    outline: none;
+    padding: 12px 16px 12px 16px;
+    width: 100%;
+    font-size: 16px;
+    border: solid transparent;
+    letter-spacing: 0.2px;
+    height: 100%;
+  }
+  
+  .edit-note-box form input::placeholder {
+    color: #202124;
+  }
+  
+  .edit-note-box form input:first-child {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .edit-note-box form input:nth-child(2) {
+    border-radius: 8px;
+  }
+  
+  /* .form-actions {
+    height: 30px;
+    /* width: 598px; */
+    /* width: auto;
+    background-color: white;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  } */
+  /* .note-create-btn {
+    cursor: pointer;
+    background-color: unset;
+    outline: none;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    margin-right: 15px;
+    width: 86px;
+    height: 36px;
+    right: 0;
+    margin-bottom: 4px;
+    border-radius: 4px;
+  }
+  
+  .note-create-btn:hover {
+    background-color: rgba(95, 99, 104, 0.039);
+  }
+  

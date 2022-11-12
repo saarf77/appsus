@@ -1,0 +1,21 @@
+.app-footer{
+    height: 7vh;
+    background-color: #e0e0e0;
+    box-shadow: inset 0 1px 0 red;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 1.5rem;
+    bottom: 0;
+    position: relative;
+    margin-top: 0;
+    padding-top: 20px;
+}
+
+.app-footer p {
+    font-weight: 600;
+    font-size: 1em;
+}
+

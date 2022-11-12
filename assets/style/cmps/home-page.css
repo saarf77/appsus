@@ -1,0 +1,48 @@
+.home-page {
+	text-align: center;
+	height: 84vh;
+}
+
+.home-page h2 {
+    font-size: 3em;
+}
+.home-page h3 {
+    font-size: 2em;
+}
+
+.home-page-img-container {
+	width: 100%;
+	justify-content: center;
+	padding-inline: 2em;
+}
+
+.home-page-img-container .img-container {
+	min-width: 200px;
+	max-width: 300px;
+	cursor: pointer;
+}
+
+.home-page-img-container > * {
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 2em;
+}
+
+.home-page-img-container .img-container img {
+	margin-bottom: 1.1em;
+	width: 100%;
+}
+
+@media (min-width: 1100px) {
+	.home-page h2 {
+		margin-bottom: 2em;
+	}
+}
+
+/* .sprite.about{
+	background-image: url(../../img/logos.png);
+	height: 10px;
+	width: 10px;
+	background-position-y: 547px;
+  } */

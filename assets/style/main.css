@@ -1,0 +1,22 @@
+/* Setup */
+@import 'setup/vars.css';
+@import 'setup/typography.css';
+@import 'setup/animation.css';
+
+/* Base */
+@import 'base/base.css';
+@import 'base/helpers.css';
+@import 'base/layout.css';
+@import 'base/forms.css';
+
+/* General Components */
+@import 'cmps/home-page.css';
+@import 'cmps/app-header.css';
+@import 'cmps/app-footer.css';
+@import 'cmps/user-msg.css';
+@import 'cmps/about-page.css';
+
+
+/* Apps */
+@import '/assets/style/apps/mail/mail-app.css';
+@import 'apps/note/note-app.css';

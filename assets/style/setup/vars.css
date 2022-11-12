@@ -1,0 +1,49 @@
+:root {
+  --clr1: rgb(255, 255, 255);
+  --clr2: rgb(240, 240, 240);
+  --clr3: rgb(155, 155, 155);
+  --clr4: rgb(96, 96, 96);
+  --clr5: rgb(0, 0, 0);
+
+
+  --secondary-clr1: rgb(88, 201, 58);
+  --secondary-clr2: rgb(122, 7, 70);
+  --mail-send-cls1: rgba(11, 87, 208, 1);
+  --mail-send-cls2: rgb(85, 130, 202);
+  --mail-send-cls3: rgba(11, 87, 208, 0.45);
+  --mail-more-gray1: rgb(232, 232, 232);
+
+  --mail-clr1: rgb(255, 255, 255);
+  --mail-clr2: rgba(233, 227, 172, 0.75);
+  --mail-clr3: rgb(205, 205, 205);
+  --mail-clr4:rgba(205, 205, 205, 0.5);
+  --mail-clr4b:rgba(175,175, 205, 0.5);
+  --mail-clr5: rgb(135, 135, 135);
+  --mail-clr6: rgba(100, 75, 75, 0.55);
+  --mail-clr7: rgb(75, 75, 75);
+  --mail-clr8: rgba(75, 75, 75, 0.5);
+  --mail-cls1: rgb(31, 26, 87);
+  --mail-cls2: rgb(89, 41, 89);
+  --mail-cls3: rgb(38, 72, 92);
+  --mail-cls4: rgb(73, 68, 130);
+  --mail-cls5: rgb(99, 83, 134);
+  --mail-cls6: rgb(84, 134, 140);
+  --mail-cls7: rgba(167, 161, 211, 0.75);
+  --mail-cls8: rgba(204, 178, 218, 0.75);
+  --mail-cls9: rgba(177, 202, 217, 0.75);
+  --mail-cls10: rgb(227, 237, 255);
+  --mail-cls11: rgb(246, 229, 255);
+  --mail-cls12: rgb(227, 245, 255);
+
+ 
+
+} 
+
+/* // --light-pink: #ffadadff;
+// --deep-champagne: #ffd6a5ff;
+// --lemon-yellow-crayola: #fdffb6ff;
+// --tea-green: #caffbfff;
+// --electric-blue: #9bf6ffff;
+// --baby-blue-eyes: #a0c4ffff;
+// --maximum-blue-purple: #bdb2ffff;
+// --mauve: #ffc6ffff; */

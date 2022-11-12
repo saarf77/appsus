@@ -1,0 +1,19 @@
+
+.todo-list{
+    font-size: 1.1em;
+}
+
+.todo-list li {
+    cursor: pointer;
+    padding: .1em;
+    list-style-type:square;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+.todo-list-title{
+    padding: .2em;
+
+}

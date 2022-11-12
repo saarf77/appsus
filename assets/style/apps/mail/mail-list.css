@@ -1,0 +1,80 @@
+.unread{
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.mail-list .mail-preview{
+    display: grid;
+    grid-template-columns: repeat(29, minmax(25px,1fr));
+    grid-template-rows: minmax(1rem,2.8rem);
+    align-items: center;
+
+    margin: 0;
+    padding-inline: 15px 15px;
+    border-top: 1px solid var(--mail-cls3);
+    box-shadow: none;
+    cursor: auto;
+}
+
+.mail-list .mail-preview:hover{
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.35), 0px -1px 0.5px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.mail-preview .selected-icon{
+    grid-column: 1/2;
+    grid-row: 1/1;
+}
+
+.mail-preview .star-icon{
+    grid-column: 2/3;
+    grid-row: 1/1;
+}
+
+.mail-preview .important-icon{
+    grid-column: 3/4;
+    grid-row: 1/1;
+}
+
+.mail-list .mail-preview .mail-info >*{
+    font-size: 1.2rem;
+}
+
+.mail-preview .mail-info {
+    grid-column: 5/30;
+    grid-row: 1/1;
+
+    display: grid;
+    grid-template-columns: repeat(24, minmax(25px,1fr));
+    grid-template-rows: 1fr;
+}
+
+
+
+.mail-preview .mail-sender{
+    grid-column: 1/4;
+    grid-row: 1/1;
+}
+
+.mail-preview .mail-title{
+    grid-column: 5/19;
+    grid-row: 1/1;
+}
+
+.mail-preview .mail-title > span {
+    padding-inline-end: 20px;
+}
+
+.mail-preview .attach-icon{
+    grid-column: 20/20;
+    grid-row: 1/1;
+    
+    text-align: center;
+}
+
+.mail-preview .mail-date{
+    grid-column: 21/25;
+    grid-row: 1/1;
+
+    text-align: center;
+}
