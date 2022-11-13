@@ -1,5 +1,5 @@
 import { svgService } from '../services/mail-svg.service.js';
-import { eventBus,showMailMsg } from '/services/event-bus.service.js';
+import { eventBus,showMailMsg } from '../../../services/event-bus.service.js';
 import { clientService } from '../services/mail.service.js';
 
 export default { 
@@ -104,6 +104,7 @@ export default {
             clientService.remove('draft',this.newMailData.id)
             this.newMailData.tab = 'sent',
             this.newMailData.sentAt = Date.now();
+            this.newMailData.from ='user@appsus.com';
             clientService.post('mail', this.newMailData);
             eventBus.emit('mailComposed');
             clearInterval(this.saveIntervalId);

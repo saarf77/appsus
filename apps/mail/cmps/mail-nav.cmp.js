@@ -1,5 +1,5 @@
 import { svgService } from '../services/mail-svg.service.js';
-
+import { eventBus } from '../../../services/event-bus.service.js';
 
 export default {
     template:`
@@ -14,13 +14,13 @@ export default {
             <span>Compose</span>
         </div>
         <section class="filters">
-            <router-link class="link-inbox" to="/mail/list">
+            <router-link class="link-inbox" to="/mail/list" @click="select('inbox')">
                 <button class="nav-btn circle-animation">
                     <img :src="inboxIcon" alt="inbox" />
                 </button>
                 <div class="link-txt" :class="{conceal: hideDescription}">inbox</div>
             </router-link> 
-            <router-link class="link-star" to="/mail/stars">
+            <router-link class="link-star" to="/mail/stars" @click="select('star')">
                 <button class="nav-btn circle-animation">
                     <img :src="starIcon" alt="starred" />
                 </button>
@@ -32,23 +32,23 @@ export default {
                 </button>
                 <div class="link-txt" :class="{conceal: hideDescription}">snoozed</div>
             </router-link> 
-            <router-link class="link-important" to="/mail/important">
+            <router-link class="link-important" to="/mail/important" @click="select('important')">
                 <button class="nav-btn circle-animation">
                     <img :src="importantIcon" alt="important" />
                 </button>
                 <div class="link-txt" :class="{conceal: hideDescription}">important</div>
             </router-link> 
-            <router-link class="link-sent" to="/mail/outbox">
+            <router-link class="link-sent" to="/mail/outbox" @click="select('sent')">
                 <button class="nav-btn circle-animation">
                     <img :src="sentIcon" alt="sent" />
                 </button>
-                <div class="link-txt" :class="{conceal: hideDescription}">sent</div>
+                <div class="link-txt" :class="{conceal: hideDescription}" >sent</div>
             </router-link>
-            <router-link class="link-draft" to="/mail/draft">
+            <router-link class="link-draft" to="/mail/draft" @click="select('draft')">
                 <button class="nav-btn circle-animation">
                     <img :src="draftIcon" alt="draft" />
                 </button>
-                <div class="link-txt" :class="{conceal: hideDescription}">draft</div>
+                <div class="link-txt" :class="{conceal: hideDescription}" >draft</div>
             </router-link> 
         </section>
     </section>
@@ -63,6 +63,7 @@ export default {
             importantIcon: null,
             sentIcon: null,
             draftIcon: null,
+            filterByStar: false,
 
         }
     },created(){
@@ -76,6 +77,9 @@ export default {
          
     },
     methods:{
+        select(value){
+            eventBus.emit('filterByValue', value);
+        },
         expendPanel(){
             this.isChopped = false;
             setTimeout(() => {
@@ -85,9 +89,10 @@ export default {
         detractPanel(){
             this.isChopped = true;
             this.hideDescription = true
-        }
+        },
     },
     components: {
-        svgService
+        svgService,
+        eventBus,
     }
 }

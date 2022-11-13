@@ -1,4 +1,4 @@
-import { eventBus } from '/services/event-bus.service.js';
+import { eventBus } from '../../../services/event-bus.service.js';
 import mailList from './mail-list.cmp.js';
 import mailDetails from './mail-details.cmp.js';
 

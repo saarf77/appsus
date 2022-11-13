@@ -1,9 +1,9 @@
-@import url(./mail-list.css);
-@import url(./mail-filter.css);
-@import url(./search-form.css);
-@import url(./mail-nav.css);
-@import url(./mail-details.css);
-@import url(./mail-compose.css);
+@import url(mail-list.css);
+@import url(mail-filter.css);
+@import url(search-form.css);
+@import url(mail-nav.css);
+@import url(mail-details.css);
+@import url(mail-compose.css);
 
 main.mail-layout{
     height: 100vh;

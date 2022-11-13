@@ -3,7 +3,8 @@ import aboutPage from './views/app-about.cmp.js'
 import noteIndexCmp from './apps/keep/pages/note-index.cmp.js'
 import aboutTeam from "./views/about-team.cmp.js"
 import aboutGoals from "./views/about-goals.cmp.js"
-import mailPage from './views/app-mail.cmp.js'
+import appMail from './views/app-mail.cmp.js'
+
 import mailStar from './apps/mail/cmps/mail-star-page.cmp.js'
 import mailSchedule from './apps/mail/cmps/mail-schedule.cmp.js'
 import mailImportant from './apps/mail/cmps/mail-important.cmp.js'
@@ -41,11 +42,11 @@ const routerOptions = {
             ]
 		},{
 			path: '/mail/list',
-			component: mailPage,
+			component: appMail,
 			children: [
 				{
                     path: '/mail/list',
-                    component: mailPage,
+                    component: appMail,
                 },
 				{
                     path: '/mail/stars',

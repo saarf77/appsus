@@ -1,6 +1,6 @@
 import mailPreview from './mail-preview.cmp.js';
 import { clientService } from '../services/mail.service.js'
-import { eventBus } from '/services/event-bus.service.js';
+import { eventBus } from '../../../services/event-bus.service.js';
 
 export default {
 
@@ -26,8 +26,9 @@ export default {
                 this.mailList = emails;
                 this.filteredMail = emails;
             });
-            eventBus.on('filter',this.updateFilter);
-        
+
+        eventBus.on('filter',this.updateFilter);
+        eventBus.on('filterByValue', this.filterByTag);
     },
     methods:{
         updateTab(val){
@@ -52,7 +53,39 @@ export default {
                     return fromTxt.includes(this.filterObj.txt);
                 });
             }
-        }
+        },
+        filterByTag(value){
+            this.filteredMail = this.mailList;
+
+            switch (value) {
+                case 'inbox':
+                    return;
+                    break;
+                case 'star':
+                    this.filteredMail = this.mailList.filter((mail) => {
+                        return mail.hasStar;
+                    });
+                    break;
+                case 'important':
+                    this.filteredMail = this.mailList.filter((mail) => {
+                        return mail.isImportant;
+                    });
+                    break;
+                case 'sent':
+                    this.filteredMail = this.mailList.filter((mail) => {
+                        return mail.tag === 'send';
+                    });
+                    break;
+                case 'draft':
+                    this.filteredMail = this.mailList.filter((mail) => {
+                        return mail.tag === 'draft';
+                    });
+                    break;
+                default:
+                    break;
+            }
+            
+        } 
     }
     ,
     components: {

@@ -1,6 +1,6 @@
 import { clientService } from '../apps/mail/services/mail.service.js';
 import { svgService } from '../apps/mail/services/mail-svg.service.js';
-import { eventBus } from '/services/event-bus.service.js';
+import { eventBus } from '../services/event-bus.service.js';
 import mailFilter from '../apps/mail/cmps/mail-filter.cmp.js';
 import mailNav from '../apps/mail/cmps/mail-nav.cmp.js';
 import mailTable from '../apps/mail/cmps/mail-table.cmp.js';
