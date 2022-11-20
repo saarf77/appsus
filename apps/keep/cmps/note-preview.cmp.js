@@ -3,7 +3,6 @@ import noteTodos from './note-todos.cmp.js'
 import noteImg from './note-img.cmp.js'
 import noteVideo from './note-video.cmp.js'
 import colorPalette from './color-palette.cmp.js'
-import noteAudio from './note-audio.cmp.js'
 
 export default {
 	name: 'notePreview',
@@ -22,7 +21,6 @@ export default {
 						<li title="Make a copy" class="fa-solid fa-copy" @click="onCopyNote"></li>
                         <li title="Edit note" class="fa-solid fa-pen-to-square" @click="onEditNote"></li>
                         <li title="Delete note" class="fa-solid fa-trash-can" @click="onRemoveNote"></li>
-                        <li title="Audio note" class="fa-solid fa-music" @click="onAudio"></li>
                       
                     </ul>
 
@@ -33,7 +31,7 @@ export default {
 			isChooseClr: false,
 		}
 	},
-	components: { noteTxt, noteTodos, noteImg, noteVideo, colorPalette,noteAudio },
+	components: { noteTxt, noteTodos, noteImg, noteVideo, colorPalette },
 	methods: {
 		openColorModal() {
 			this.isChooseClr = true

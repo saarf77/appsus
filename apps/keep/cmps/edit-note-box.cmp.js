@@ -16,7 +16,6 @@ export default {
  					<li title="Add List" :style="isList" class="fa-solid fa-list" @click="changeNoteType('noteTodos')"></li>
  					<li title="Add image" :style="isImg" class="fa-solid fa-image" @click="changeNoteType('noteImg')"></li>
  					<li title="Add Youtube video" :style="isVideo" class="fa-brands fa-youtube" @click="changeNoteType('noteVideo')"></li>
- 					<li title="Add audio" :style="isAudio" class="fa-solid fa-music" @click="changeNoteType('noteAudio')"></li>
  				</ul>
              </div>
         </section>
@@ -101,8 +100,7 @@ export default {
 					return 'Enter image URL'
 				case 'noteVideo':
 					return 'Enter a Youtube URL'
-				case 'noteAudio':
-					return 'Enter a audio URL'
+				
 			}
 		},
 
