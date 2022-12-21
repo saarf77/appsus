@@ -7,28 +7,4 @@
 
 
 
-@media screen and (max-width: 420px) {
-  .main-container{
-    min-width: 350px !important;
-    max-width: 380px;
-  }
-    .filter-bar-container{
-      min-width: 350px !important;
-    }
-    .note-type-filter{
-      transform:translateX(165%) !important ;
-    }
-    .app-footer{
-      display: none !important;
-    }
-    .books-mobile{
-      display: none;
-    }
-    .title {
-      background-position-y: 966px !important;
-      transform: translateX(-20px);
-      /* transform: translateY(5px); */
-    }
-  }
-
 

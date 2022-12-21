@@ -13,7 +13,7 @@
     /* X-SMALL */
     @media (min-width: 440px) {
     .main-cointainer {
-        max-width: 390px;
+        max-width: 380px;
     }
     /* .sprite {
         height: 38px;
@@ -77,6 +77,7 @@
       
     /* X LARGE */
     @media (min-width: 1440px) {
+
     .main-cointainer {
         max-width: 1260px;
     }
@@ -86,4 +87,29 @@
         font-size: 1.2em;
     }
     }
+      
+
+    @media screen and (max-width: 420px) {
+        .main-container{
+          min-width: 350px !important;
+          max-width: 380px;
+        }
+          .filter-bar-container{
+            min-width: 350px !important;
+          }
+          .note-type-filter{
+            transform:translateX(165%) !important ;
+          }
+          .app-footer{
+            display: none !important;
+          }
+          .books-mobile{
+            display: none;
+          }
+          .title {
+            background-position-y: 966px !important;
+            transform: translateX(-20px);
+          }
+        }
+      
       

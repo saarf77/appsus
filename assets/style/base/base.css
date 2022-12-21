@@ -3,7 +3,8 @@
 }
 
 html {
-  
+    overflow-x:hidden;
+
 }
 
 body {
