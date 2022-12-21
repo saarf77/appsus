@@ -17,9 +17,9 @@
 }
 
 .color-choose-modal {
-    transform: translate(-36%, 49%);
+    transform: translate(-40%, 49%);
     z-index: 100;
-    position:fixed;
+    position:absolute;
     padding: 0.4em;
     border-radius: 10px;
     background-color: #fff;
